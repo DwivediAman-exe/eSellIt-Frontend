@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import * as Location from 'expo-location';
 
-export default useLocation = () => {
+const useLocation = () => {
 	const [location, setLocation] = useState();
 
 	const getLocation = async () => {
@@ -26,3 +26,5 @@ export default useLocation = () => {
 
 	return location;
 };
+
+export default useLocation;
